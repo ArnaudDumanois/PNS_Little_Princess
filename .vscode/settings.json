@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Mario_Crossing.sln"
+    "dotnet.defaultSolution": "PNS_Little_Princess.sln"
 }
