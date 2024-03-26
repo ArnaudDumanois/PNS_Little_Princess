@@ -1,27 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class cameraController : MonoBehaviour
 {
     public Transform target; // Référence à l'objet que la caméra doit suivre
     public float smoothSpeed = 0.125f; // Vitesse de suivi de la caméra
-    public Vector3 offset; // Offset de position par rapport à la cible
-    public float rotationSpeed = 5f; // Vitesse de rotation de la caméra
+    public float distance = 5f; // Distance entre la caméra et le personnage
+    public float height = 2f; // Hauteur de la caméra par rapport au personnage
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         if (target != null)
         {
-            // Calcul de la position désirée de la caméra
-            Vector3 desiredPosition = target.position - offset;
-            
+            // Calcul de la position désirée de la caméra basée sur la position du personnage et son vecteur forward
+            Vector3 desiredPosition = target.position - target.forward * distance + Vector3.up * height;
+
             // Lissage du mouvement de la caméra
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
             transform.position = smoothedPosition; // Déplacement de la caméra
-            
-            // Calcul de la rotation désirée de la caméra pour regarder vers le haut du personnage
-            Vector3 directionToTarget = (target.position - transform.position).normalized;
-            Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+            // Faites en sorte que la caméra regarde vers le personnage
+            transform.LookAt(target);
         }
     }
 }
