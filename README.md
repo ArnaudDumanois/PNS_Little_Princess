@@ -14,4 +14,8 @@ https://sketchfab.com/3d-models/animal-crossing-wild-world-museum-6b317ba4cdc349
 pour la mairie: <br/>
 https://sketchfab.com/3d-models/animal-crossing-new-horizons-resident-service-0ad6a7f7936247859b9bca31f7978cf9 <br/>
 pour la tente: <br/>
-https://sketchfab.com/3d-models/animal-crossing-new-horizons-resident-service-0ad6a7f7936247859b9bca31f7978cf9< br/>
+https://sketchfab.com/3d-models/animal-crossing-new-horizons-resident-service-0ad6a7f7936247859b9bca31f7978cf9 <br/>
+
+
+video pour l animation des npc: <br/>
+https://www.youtube.com/watch?v=bSL0sNZ4Kqw <br/>
