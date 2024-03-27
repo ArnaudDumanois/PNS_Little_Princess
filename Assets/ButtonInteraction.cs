@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using TMPro;
+using System.Threading;
 
 public class ButtonClickHandler : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class ButtonClickHandler : MonoBehaviour
     public AudioClip audioClipDialogue5;
     public AudioClip audioClipDialogue6;
     
+    public Controller controllerScript;
 
     void Awake()
     {
@@ -111,13 +113,18 @@ public class ButtonClickHandler : MonoBehaviour
             audioSource.Play();
         } else if (dialogueEtape == 5)
         {
+            phraseMacron.text = listeDialogue[5];
             audioSource.clip = audioClipDialogue6; 
             audioSource.Play();
-            //on doit mettre un sleep ou un truc dans le genre t'as capté
-            Debug.Log("ON DOIT LANCER LA COURSE");
+            
+            buttonChoice1.gameObject.SetActive(false);
+            buttonChoice2.gameObject.SetActive(false);
+            canvasMacron.gameObject.SetActive(false);
+            
             cameras[0].gameObject.SetActive(false);
             cameras[1].gameObject.SetActive(false);
             cameras[2].gameObject.SetActive(true);
+            controllerScript.SetActive(true);
         }
     }
 
