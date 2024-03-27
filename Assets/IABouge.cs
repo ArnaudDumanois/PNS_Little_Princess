@@ -30,7 +30,6 @@ public class IABouge : MonoBehaviour
 
     if(walkPointSet){
         agent.SetDestination(destPoint);
-        transform.rotation = Quaternion.Euler(90, 0, 0); // Fixer la rotation à 0,0,0
     } 
 
     if(Vector3.Distance(transform.position, destPoint) < 2){
