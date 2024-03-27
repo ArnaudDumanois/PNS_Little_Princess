@@ -44,7 +44,6 @@ public class IABouge : MonoBehaviour
     NavMeshHit hit;
     NavMesh.SamplePosition(randomDirection, out hit, range, 1);
     destPoint = hit.position;
-
     walkPointSet = true;
 }
 
