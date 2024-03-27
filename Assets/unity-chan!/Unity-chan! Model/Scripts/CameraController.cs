@@ -66,7 +66,7 @@ namespace UnityChan
 		}
 
 		//Show Instrustion Window
-		void OnGUI()
+		/*void OnGUI()
 		{
 			if(showInstWindow){
 				GUI.Box(new Rect(Screen.width -210, Screen.height - 100, 200, 90), "Camera Operations");
@@ -76,6 +76,7 @@ namespace UnityChan
 			}
 
 		}
+		*/
 
 		void mouseEvent()
 		{
