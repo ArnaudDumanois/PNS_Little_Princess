@@ -6,21 +6,38 @@ using UnityEngine.AI;
 public class IABouge : MonoBehaviour
 {
     NavMeshAgent agent;
-    [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask groundLayer, playerLayer;
     Vector3 destPoint;
     bool walkPointSet;
     [SerializeField] float range;
+    [SerializeField] float sightRange;
+    Vector3 position;
+    Animator animator; 
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Patrol();
+        bool playerInSight = Physics.CheckSphere(transform.position, sightRange, playerLayer);
+        if(!playerInSight){
+            position = transform.position;
+            Patrol();
+        } else if(playerInSight){
+            Found(position);
+        }
+    }
+
+    void Found(Vector3 position){
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")){
+            animator.SetTrigger("Idle");
+            agent.SetDestination(position);
+        }
     }
 
     void Patrol(){
