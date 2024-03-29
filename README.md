@@ -19,3 +19,10 @@ https://sketchfab.com/3d-models/animal-crossing-new-horizons-resident-service-0a
 
 video pour l animation des npc: <br/>
 https://www.youtube.com/watch?v=bSL0sNZ4Kqw <br/>
+
+vidoe pour le deplacement npc: <br/>
+https://www.youtube.com/watch?v=-Iwsz4gdgyQ&list=PLoReGgpfex3zCZt2I7LBmOmuVT9S3sqwq&index=11 <br/>
+
+video arret du npc quand le joueur aproche sa zonr : <br/>
+https://www.youtube.com/watch?v=DnIBoUBezeU&list=PLoReGgpfex3zCZt2I7LBmOmuVT9S3sqwq&index=13 <br/>
+https://www.youtube.com/watch?v=xtJgi8SblIk&list=PLoReGgpfex3zCZt2I7LBmOmuVT9S3sqwq&index=12 <br/>
