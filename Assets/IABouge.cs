@@ -38,6 +38,10 @@ public class IABouge : MonoBehaviour
             animator.SetTrigger("Idle");
             agent.SetDestination(position);
         }
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("IdleAigle")){
+            animator.SetTrigger("Idle");
+            agent.SetDestination(position);
+        }
     }
 
     void Patrol(){
