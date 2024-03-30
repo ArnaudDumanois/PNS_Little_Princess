@@ -42,6 +42,10 @@ public class IABouge : MonoBehaviour
             animator.SetTrigger("Idle");
             agent.SetDestination(position);
         }
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("idleJitter")){
+            animator.SetTrigger("Idle");
+            agent.SetDestination(position);
+        }
     }
 
     void Patrol(){
