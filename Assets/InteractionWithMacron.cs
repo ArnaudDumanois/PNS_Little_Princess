@@ -7,10 +7,11 @@ public class InteractionPlayer : MonoBehaviour
     public float interactionDistance = 2f;
     public Button interactionButton;
     public Vector3 teleportPosition = new Vector3(-37f, 3.26f, 26.9f);
+    public bool shouldWeShowIt = true;
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, macronModel.transform.position) < interactionDistance)
+        if (Vector3.Distance(transform.position, macronModel.transform.position) < interactionDistance && shouldWeShowIt)
         {
             interactionButton.gameObject.SetActive(true);
         }
@@ -18,5 +19,10 @@ public class InteractionPlayer : MonoBehaviour
         {
             interactionButton.gameObject.SetActive(false);
         }
+    }
+
+    public void setShouldWeShowIt(bool value)
+    {
+        shouldWeShowIt = value;
     }
 }

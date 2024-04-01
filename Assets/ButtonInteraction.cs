@@ -29,6 +29,7 @@ public class ButtonClickHandler : MonoBehaviour
     public AudioClip audioClipDialogue6;
     
     public Controller controllerScript;
+    public InteractionPlayer interactionMacron;
 
     void Awake()
     {
@@ -54,6 +55,7 @@ public class ButtonClickHandler : MonoBehaviour
         cameras[0].gameObject.SetActive(false);
         cameras[1].gameObject.SetActive(true);
         canvasMacron.gameObject.SetActive(true);
+        interactionMacron.setShouldWeShowIt(false);
         dialogueEtape = 1;
         DisplayDialogue(); 
     }
@@ -151,5 +153,7 @@ public class ButtonClickHandler : MonoBehaviour
         buttonChoice1.gameObject.SetActive(false);
         buttonChoice2.gameObject.SetActive(false);
         buttonPass.gameObject.SetActive(false);
+        interactionMacron.setShouldWeShowIt(true);
+
     }
 }
