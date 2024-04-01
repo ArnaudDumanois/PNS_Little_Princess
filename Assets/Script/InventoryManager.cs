@@ -9,7 +9,9 @@ public class InventoryManager : MonoBehaviour
     public List<Item> Items = new List<Item>();
 
     public Transform ItemContent;
-    public GameObject IventoryItem;
+    public GameObject InventoryItemPrefab;
+
+    public Toggle EnableRemove;
 
     private void Awake()
     {
@@ -34,9 +36,46 @@ public class InventoryManager : MonoBehaviour
         }
         foreach (var item in Items)
         {
-            GameObject obj = Instantiate(IventoryItem, ItemContent);
+            GameObject obj = Instantiate(InventoryItemPrefab, ItemContent);
             var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
             itemIcon.sprite = item.icon;
-        }    
+            var removeButton = obj.transform.Find("RemoveButton").GetComponent<Button>();
+
+            if (EnableRemove.isOn)
+            {
+                removeButton.gameObject.SetActive(true);
+            }
+            else
+            {
+                removeButton.gameObject.SetActive(false);
+            }
+
+            // Instantiate InventoryItemController dynamically
+            InventoryItemController controller = obj.GetComponent<InventoryItemController>();
+            if (controller == null)
+            {
+                Debug.LogError("InventoryItemController component not found on " + obj.name);
+                continue;
+            }
+            controller.AddItem(item);
+        }
+    }
+
+    public void EnableItemsRemove()
+    {
+        if (EnableRemove.isOn)
+        {
+            foreach (Transform item in ItemContent)
+            {
+                item.Find("RemoveButton").gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach (Transform item in ItemContent)
+            {
+                item.Find("RemoveButton").gameObject.SetActive(false);
+            }
+        }
     }
 }
