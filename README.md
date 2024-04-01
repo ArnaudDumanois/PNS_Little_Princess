@@ -30,3 +30,6 @@ https://www.youtube.com/watch?v=-Iwsz4gdgyQ&list=PLoReGgpfex3zCZt2I7LBmOmuVT9S3s
 video arret du npc quand le joueur aproche sa zonr : <br/>
 https://www.youtube.com/watch?v=DnIBoUBezeU&list=PLoReGgpfex3zCZt2I7LBmOmuVT9S3sqwq&index=13 <br/>
 https://www.youtube.com/watch?v=xtJgi8SblIk&list=PLoReGgpfex3zCZt2I7LBmOmuVT9S3sqwq&index=12 <br/>
+
+video pour l inventaire : <br/>
+https://www.youtube.com/watch?v=AoD_F1fSFFg <br/>
