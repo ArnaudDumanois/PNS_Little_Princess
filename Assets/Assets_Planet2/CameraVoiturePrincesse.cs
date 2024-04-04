@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollowCarPrincess : MonoBehaviour
 {
     public Transform target; // Référence à l'objet que la caméra doit suivre
     public float smoothSpeed = 1f; // Vitesse de suivi de la caméra
