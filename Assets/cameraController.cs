@@ -7,8 +7,8 @@ public class cameraController : MonoBehaviour
 {
     public Transform target; // Référence à l'objet que la caméra doit suivre
     public float smoothSpeed = 0.125f; // Vitesse de suivi de la caméra
-    public float distance = 12f; // Distance entre la caméra et le personnage
-    public float height = 5f; // Hauteur de la caméra par rapport au personnage
+    public float distance = 19f; // Distance entre la caméra et le personnage
+    public float height = 7f; // Hauteur de la caméra par rapport au personnage
     
     void FixedUpdate()
     {

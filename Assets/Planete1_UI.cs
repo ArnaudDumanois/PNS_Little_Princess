@@ -24,9 +24,9 @@ public class Planete1_UI : MonoBehaviour
     public void UpdateText()
     {
         visitedModel++;
-        text.text = "Modèles visités " + visitedModel.ToString() + "/3";
+        text.text = "Modèles visités " + visitedModel.ToString() + "/4";
         
-        if (visitedModel == 1)
+        if (visitedModel == 4)
         {
             text.text = "Vous avez visité tous les modèles !";
             endCamera.gameObject.SetActive(true); // Active la caméra
