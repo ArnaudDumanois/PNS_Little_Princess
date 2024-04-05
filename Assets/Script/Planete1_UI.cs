@@ -14,9 +14,10 @@ public class Planete1_UI : MonoBehaviour
     public Camera mainCamera; // Référence à la caméra principale
     public Camera endCamera; // Référence à la caméra de fin
 
-
+    public GameObject planetObject; // Référence à l'objet planète
     public void Start()
     {
+        planetObject.SetActive(false); // Désactive l'objet planète
         endCamera.gameObject.SetActive(false); // Désactive la caméra de fin
     }
 
@@ -31,6 +32,7 @@ public class Planete1_UI : MonoBehaviour
             text.text = "Vous avez visité tous les modèles !";
             endCamera.gameObject.SetActive(true); // Active la caméra
             mainCamera.gameObject.SetActive(false); // Désactive la caméra principale
+            planetObject.SetActive(true); // Active l'objet planète
             Invoke("DisableCamera", 2f);
         }
     }
