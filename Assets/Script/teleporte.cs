@@ -10,12 +10,15 @@ public class Teleporte : MonoBehaviour
     // on choisit la lumiere qu'on va reduire
     public Light planetLight;
     
+    public Planete1_MusicController musicController;
+    
     void OnTriggerEnter(Collider other)
     {
         Console.WriteLine("Collision detected");
         if (other.CompareTag("Player"))
         {
             Console.WriteLine("Player detected");
+            musicController.PlayTeleportMusic();
             other.transform.position = target.position;
             planetLight.intensity = 0.7f;
         }

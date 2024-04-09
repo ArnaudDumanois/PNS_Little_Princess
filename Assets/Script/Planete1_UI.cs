@@ -27,7 +27,7 @@ public class Planete1_UI : MonoBehaviour
         visitedModel++;
         text.text = "Modèles visités " + visitedModel.ToString() + "/4";
         
-        if (visitedModel == 4)
+        if (visitedModel == 2)
         {
             text.text = "Vous avez visité tous les modèles !";
             endCamera.gameObject.SetActive(true); // Active la caméra
@@ -35,6 +35,11 @@ public class Planete1_UI : MonoBehaviour
             planetObject.SetActive(true); // Active l'objet planète
             Invoke("DisableCamera", 2f);
         }
+    }
+    
+    public void EndText()
+    {
+        text.text = "Vous avez récupéré le super bonbon !";
     }
     
     // désactive la caméra
