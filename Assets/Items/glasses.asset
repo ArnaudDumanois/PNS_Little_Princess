@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e053b5492b449b941b731aacb1c4f38a, type: 3}
-  m_Name: sherb
+  m_Name: glasses
   m_EditorClassIdentifier: 
   id: 3
-  itemName: Sherb
+  itemName: Glasses
   value: 1
-  icon: {fileID: 21300000, guid: 87a92aedaa5cc2d41a5ef922ae452b67, type: 3}
+  icon: {fileID: 21300000, guid: 151a2a4da5efa574eaa5950818f32c76, type: 3}
