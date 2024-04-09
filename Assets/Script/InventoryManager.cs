@@ -13,6 +13,8 @@ public class InventoryManager : MonoBehaviour
     public GameObject planetObject;
 
     public Toggle EnableRemove;
+    public Camera endCamera;
+    public Camera mainCamera;
 
     private void Awake()
     {
@@ -67,6 +69,7 @@ public class InventoryManager : MonoBehaviour
         int count = 0;
         foreach (Item item in Items)
         {
+            if (item.name == "finalcandy")
             if (item.name == "candy")
             {
                 count++;
@@ -74,8 +77,17 @@ public class InventoryManager : MonoBehaviour
         }
         if (count == 3)
         {
+            endCamera.gameObject.SetActive(true);
+            mainCamera.gameObject.SetActive(false);
             planetObject.SetActive(true);
+            Invoke("DisableCamera", 2f);
         }
+
+    }
+    private void DisableCamera()
+    {
+        endCamera.gameObject.SetActive(false);
+        mainCamera.gameObject.SetActive(true);
     }
 
     public bool HasItem(string itemName) { 
@@ -102,5 +114,6 @@ public class InventoryManager : MonoBehaviour
     void Start()
     {
         planetObject.SetActive(false);
+        endCamera.gameObject.SetActive(false);
     }
 }

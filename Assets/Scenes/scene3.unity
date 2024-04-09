@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1856,7 +1856,6 @@ GameObject:
   - component: {fileID: 116379922}
   - component: {fileID: 116379925}
   - component: {fileID: 116379926}
-  - component: {fileID: 116379927}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1931,13 +1930,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116379921}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.95, y: 1.04, z: 11.6}
+  m_LocalRotation: {x: 0.06723168, y: 0, z: 0, w: 0.9977374}
+  m_LocalPosition: {x: 23.96, y: 1.9, z: 10.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.71, y: -0, z: 0}
 --- !u!114 &116379925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1957,30 +1956,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116379921}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa2917457dc39664087b4a8740a1b46a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 637268975}
   smoothSpeed: 0.125
-  distance: 4
-  height: 2
---- !u!114 &116379927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116379921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 687a3d7df4187ef43852964a553d732f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 637268975}
-  smoothSpeed: 0.125
-  distance: 4
+  distance: 7.8
   height: 2
 --- !u!1 &117754063
 GameObject:
@@ -3561,7 +3544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4505768340710960371, guid: 74450c583b2eaa842b89ea1d7b25b3e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.52
       objectReference: {fileID: 0}
     - target: {fileID: 4505768340710960371, guid: 74450c583b2eaa842b89ea1d7b25b3e9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22105,6 +22088,8 @@ MonoBehaviour:
   InventoryItemPrefab: {fileID: 3233475592684332970, guid: ecd4d38bdc758bc48b1a9c6022da8ed7, type: 3}
   planetObject: {fileID: 209317293}
   EnableRemove: {fileID: 1305600435}
+  endCamera: {fileID: 1479488407}
+  mainCamera: {fileID: 116379923}
 --- !u!4 &1165430846
 Transform:
   m_ObjectHideFlags: 0
@@ -26575,6 +26560,111 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 87e59d06481941b4da3489f0c4aa5bbc, type: 2}
+--- !u!1 &1479488402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1479488408}
+  - component: {fileID: 1479488407}
+  - component: {fileID: 1479488406}
+  - component: {fileID: 1479488405}
+  m_Layer: 0
+  m_Name: end Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1479488405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479488402}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f191d5b135e30b345b252dc10a541698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!81 &1479488406
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479488402}
+  m_Enabled: 1
+--- !u!20 &1479488407
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479488402}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1479488408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479488402}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.027890166, y: 0.94657797, z: 0.085229285, w: 0.30975524}
+  m_LocalPosition: {x: 91.51, y: 1.04, z: 10.318}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -10.29, y: 143.76, z: 0}
 --- !u!1 &1511511341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1710998388358310652, guid: e62f8d97c85cee9439df9daec2c8fcb5, type: 3}
@@ -35841,6 +35931,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 116379924}
+  - {fileID: 1479488408}
   - {fileID: 598747602}
   - {fileID: 1245684841}
   - {fileID: 1988104609}
