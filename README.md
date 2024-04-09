@@ -30,3 +30,4 @@ video pour l inventaire : <br/>
 https://www.youtube.com/watch?v=AoD_F1fSFFg <br/>
 video pour les dialogue plante 3: </br>
 https://www.youtube.com/watch?v=QPJHY6MPag4 </br>
+https://www.youtube.com/watch?v=l_3vUnlNoPo </br>

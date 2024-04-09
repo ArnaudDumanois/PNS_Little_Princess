@@ -61,6 +61,10 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public bool HasItem(string itemName) { 
+        return Items.Exists(item => item.name == itemName); 
+    }
+    
     public void EnableItemsRemove()
     {
         if (EnableRemove.isOn)

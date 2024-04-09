@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: bells
   m_EditorClassIdentifier: 
   id: 4
-  itemName: Bells
+  itemName: bells
   value: 1
   icon: {fileID: 21300000, guid: 2b96522a867b7b84c9db19f313c0f76e, type: 3}

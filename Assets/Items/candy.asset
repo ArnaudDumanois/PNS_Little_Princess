@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: candy
   m_EditorClassIdentifier: 
   id: 1
-  itemName: Candy
+  itemName: candy
   value: 1
   icon: {fileID: 21300000, guid: 428db0fea33eb7d4cb119efdc6d79a8f, type: 3}

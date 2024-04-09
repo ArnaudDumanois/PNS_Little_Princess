@@ -4,7 +4,7 @@ using UnityEngine;
 using DialogueEditor;
 using Unity.VisualScripting;
 
-public class ConversationStarter : MonoBehaviour
+public class ConversationStarterAigle : MonoBehaviour
 {
     [SerializeField] private NPCConversation myConversation;
     int hasItem = 0;
@@ -27,7 +27,7 @@ public class ConversationStarter : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X))
             {
                 Debug.Log("X key pressed");
-                hasItem = InventoryManager.Instance.HasItem("bells") ? 1 : 0;
+                hasItem = InventoryManager.Instance.HasItem("axe") ? 1 : 0;
                 Debug.Log("hasItem: " + hasItem);
                 ConversationManager.Instance.StartConversation(myConversation);
                 ConversationManager.Instance.SetInt("hasItem", hasItem);

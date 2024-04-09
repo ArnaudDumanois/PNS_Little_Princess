@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: glasses
   m_EditorClassIdentifier: 
   id: 3
-  itemName: Glasses
+  itemName: glasses
   value: 1
   icon: {fileID: 21300000, guid: 151a2a4da5efa574eaa5950818f32c76, type: 3}
