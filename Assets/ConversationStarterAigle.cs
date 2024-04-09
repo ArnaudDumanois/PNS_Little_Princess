@@ -9,6 +9,8 @@ public class ConversationStarterAigle : MonoBehaviour
     [SerializeField] private NPCConversation myConversation;
     int hasItem = 0;
 
+    public GameObject planetObject;
+
     private bool conversationStarted = false;
 
     private void OnTriggerEnter(Collider other)
@@ -18,6 +20,9 @@ public class ConversationStarterAigle : MonoBehaviour
             Debug.Log("Player entered trigger zone.");
             conversationStarted = true;
         }
+    }
+    void Start() {
+        planetObject.SetActive(false);
     }
 
     private void OnTriggerStay(Collider other)
@@ -31,6 +36,10 @@ public class ConversationStarterAigle : MonoBehaviour
                 Debug.Log("hasItem: " + hasItem);
                 ConversationManager.Instance.StartConversation(myConversation);
                 ConversationManager.Instance.SetInt("hasItem", hasItem);
+                if (hasItem == 1)
+                {
+                    planetObject.SetActive(true);
+                }
                 conversationStarted = false; // Resetting for potential future conversations
             }
             else

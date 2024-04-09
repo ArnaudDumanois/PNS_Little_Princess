@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
 
     public Transform ItemContent;
     public GameObject InventoryItemPrefab;
+    public GameObject planetObject;
 
     public Toggle EnableRemove;
 
@@ -60,6 +61,22 @@ public class InventoryManager : MonoBehaviour
             controller.AddItem(item);
         }
     }
+    
+    void Update()
+    {
+        int count = 0;
+        foreach (Item item in Items)
+        {
+            if (item.name == "candy")
+            {
+                count++;
+            }
+        }
+        if (count == 3)
+        {
+            planetObject.SetActive(true);
+        }
+    }
 
     public bool HasItem(string itemName) { 
         return Items.Exists(item => item.name == itemName); 
@@ -81,5 +98,9 @@ public class InventoryManager : MonoBehaviour
                 item.Find("RemoveButton").gameObject.SetActive(false);
             }
         }
+    }
+    void Start()
+    {
+        planetObject.SetActive(false);
     }
 }

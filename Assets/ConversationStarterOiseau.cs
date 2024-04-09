@@ -10,6 +10,8 @@ public class ConversationStarterOiseau : MonoBehaviour
     int hasItem = 0;
 
     private bool conversationStarted = false;
+    public GameObject planetObject;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +20,10 @@ public class ConversationStarterOiseau : MonoBehaviour
             Debug.Log("Player entered trigger zone.");
             conversationStarted = true;
         }
+    }
+
+    void Start() {
+        planetObject.SetActive(false);
     }
 
     private void OnTriggerStay(Collider other)
@@ -31,6 +37,10 @@ public class ConversationStarterOiseau : MonoBehaviour
                 Debug.Log("hasItem: " + hasItem);
                 ConversationManager.Instance.StartConversation(myConversation);
                 ConversationManager.Instance.SetInt("hasItem", hasItem);
+                if (hasItem == 1)
+                {
+                    planetObject.SetActive(true);
+                }
                 conversationStarted = false; // Resetting for potential future conversations
             }
             else
