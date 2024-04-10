@@ -22084,6 +22084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Items: []
+  sceneToLoad: Scene_Final
   ItemContent: {fileID: 1944399306}
   InventoryItemPrefab: {fileID: 3233475592684332970, guid: ecd4d38bdc758bc48b1a9c6022da8ed7, type: 3}
   planetObject: {fileID: 209317293}

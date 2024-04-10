@@ -2,11 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
     public List<Item> Items = new List<Item>();
+    public string sceneToLoad = "NomDeVotreScene"; 
+    private bool hasPickup = false;
+
+    private bool cameraMain = false;
 
     public Transform ItemContent;
     public GameObject InventoryItemPrefab;
@@ -70,13 +76,21 @@ public class InventoryManager : MonoBehaviour
         foreach (Item item in Items)
         {
             if (item.name == "finalcandy")
+            {
+                if (!hasPickup)
+                {
+                    StartCoroutine(LoadSceneAfterDelay());
+                    hasPickup = true;
+                }
+            }
             if (item.name == "candy")
             {
                 count++;
             }
         }
-        if (count == 3)
+        if (count == 1 && !cameraMain)
         {
+            cameraMain = true;
             endCamera.gameObject.SetActive(true);
             mainCamera.gameObject.SetActive(false);
             planetObject.SetActive(true);
@@ -84,6 +98,12 @@ public class InventoryManager : MonoBehaviour
         }
 
     }
+    IEnumerator LoadSceneAfterDelay()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(sceneToLoad);
+    }
+
     private void DisableCamera()
     {
         endCamera.gameObject.SetActive(false);
