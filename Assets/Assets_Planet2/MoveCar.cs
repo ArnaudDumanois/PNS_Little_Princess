@@ -82,7 +82,7 @@ public class Controller : MonoBehaviour
             nbLapsDone += 1;
             StartCoroutine(DisplayTourCount());
             checkpoints.Clear();
-            if (nbLapsDone == 2)
+            if (nbLapsDone == 1)
             {
                 endCourse();
                 isRaceFinished = true;
