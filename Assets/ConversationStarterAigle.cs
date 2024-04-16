@@ -39,6 +39,7 @@ public class ConversationStarterAigle : MonoBehaviour
                 if (hasItem == 1)
                 {
                     planetObject.SetActive(true);
+                    InventoryManager.Instance.RemoveItem("axe");
                 }
                 conversationStarted = false; // Resetting for potential future conversations
             }

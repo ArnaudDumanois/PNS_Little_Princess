@@ -38,6 +38,7 @@ public class ConversationStarter : MonoBehaviour
                 if (hasItem == 1)
                 {
                     planetObject.SetActive(true);
+                    InventoryManager.Instance.RemoveItem("bells");
                 }
                 conversationStarted = false; // Resetting for potential future conversations
             }

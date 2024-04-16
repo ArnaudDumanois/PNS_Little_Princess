@@ -40,6 +40,7 @@ public class ConversationStarterOiseau : MonoBehaviour
                 if (hasItem == 1)
                 {
                     planetObject.SetActive(true);
+                    InventoryManager.Instance.RemoveItem("glasses");
                 }
                 conversationStarted = false; // Resetting for potential future conversations
             }

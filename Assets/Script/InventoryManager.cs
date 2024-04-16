@@ -88,7 +88,7 @@ public class InventoryManager : MonoBehaviour
                 count++;
             }
         }
-        if (count == 1 && !cameraMain)
+        if (count == 3 && !cameraMain)
         {
             cameraMain = true;
             endCamera.gameObject.SetActive(true);
@@ -112,6 +112,15 @@ public class InventoryManager : MonoBehaviour
 
     public bool HasItem(string itemName) { 
         return Items.Exists(item => item.name == itemName); 
+    }
+
+    public void RemoveItem(string itemName)
+    {
+        Item itemToRemove = Items.Find(item => item.name == itemName);
+        if (itemToRemove != null)
+        {
+            Items.Remove(itemToRemove);
+        }
     }
     
     public void EnableItemsRemove()
