@@ -1,5 +1,23 @@
-liens pour les assets: <br/>
-planète 3: <br/>
+# Introduction : 
+Dans ce readMe vous retrouverez les différents liens correspondant aux sources utulisées pour pouvoir réaliser notre projet.
+## Imports communs : 
+- Modèle de la princesse : https://sketchfab.com/3d-models/cartoon-race-track-oval-f88b33a3a65c4965b03578dc7f4f6eb4
+- Fond d'écran de chargement : https://www.reddit.com/r/Unity2D/comments/s1deiv/main_menu_background_weve_been_working_on_what_do/
+# Planète 2 :
+## Liens musicaux :
+Ces liens correspondent aux différentes musiques utilisées pour la radio lors de la course :
+- https://www.youtube.com/watch?v=atuFSv2bLa8&t=10s&pp=ygULZ2FzIGdhcyBnYXM%3D
+- https://www.youtube.com/watch?v=i0p1bmr0EmE&pp=ygUSdHdpY2Ugd2hhdCBpcyBsb3Zl
+- https://www.youtube.com/watch?v=FQlAEiCb8m0&pp=ygUcbXVzaWMgc291bmRzIGJldHRlciB3aXRoIHlvdQ%3D%3D
+## Liens sketchfab :
+Ces liens correspondent aux différents modèles importés pour pouvoir réaliser la planète 2 :
+- Modèle Emmanuel Macron : https://sketchfab.com/3d-models/emmanuel-macron-avatar-a856203f463c43c592fffbf4c8bfc71b
+- Voiture de la princesse : https://sketchfab.com/3d-models/chevrolet-ss-nascar-racing-car-95c0a0b0cd0746c894c6ccdf97a73b64
+- Voiture IA : https://sketchfab.com/3d-models/chevrolet-corvette-stingray-c8-833e5e9e86cc400596560a4a386f8a4e
+- Circuit de course : https://sketchfab.com/3d-models/cartoon-race-track-oval-f88b33a3a65c4965b03578dc7f4f6eb4
+
+
+# Planète 3: <br/>
 pour la map: <br/>
 https://sketchfab.com/3d-models/animal-crossing-map-9f53cb8a02134037887875e022b2eae2 <br/>
 pour les arbres: <br/>
