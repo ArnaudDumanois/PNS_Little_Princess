@@ -1,5 +1,28 @@
-# Introduction : 
+# Introduction :
 Dans ce readMe vous retrouverez les différents liens correspondant aux sources utulisées pour pouvoir réaliser notre projet.
+# Ouvrir le projet : 
+- Créer un nouveau projet unity 
+- Importer le fichier .unitypackage avec tout son contenu : https://drive.google.com/file/d/1ho9sXFAt5s99VDucdfM0OFK5BUur4Oj4/view?usp=sharing
+- Installer le package AI Navigation
+  - Dans la barre des tâches, cliquer sur Window, Package Manager 
+  - Changer "Packages: In Project" en "Packages: Unity Registry"
+  - Chercher "AI Navigation" dans "Packages"
+  - Cliquer dessus puis appuyer sur "Install" en bas à droite de la fenêtre 
+  - Redémarrer Unity
+- Configurer Build Settings (sinon les changements de scenes ne fonctionneront pas)
+    - Dans la barre des tâches, cliquer sur File, Build Settings...
+    - Choisir comme plateforme Windows, Mac, Linux
+    - Mettre dans l'ordre les scenes suivantes (se trouvant dans ./assets/Scenes) dans "Scenes in Build":
+      - Scene_MenuPrincipal
+      - Planete1
+      - Scene_Chargement_Planete2
+      - Scene_Test_Simon
+      - Scene_Chargement_Planete3
+      - scene3
+      - Scene_Final
+- Le projet peut maintenant être build
+- Pour commencer le jeu du début, lancer la scene Scene_MenuPrincipal ou alors le .exe généré lors du build
+
 ## Imports communs : 
 - Modèle de la princesse : https://sketchfab.com/3d-models/cartoon-race-track-oval-f88b33a3a65c4965b03578dc7f4f6eb4
 - Fond d'écran de chargement : https://www.reddit.com/r/Unity2D/comments/s1deiv/main_menu_background_weve_been_working_on_what_do/
