@@ -1,7 +1,7 @@
 # Introduction :
 Dans ce readMe vous retrouverez les différents liens correspondant aux sources utilisées pour pouvoir réaliser notre projet.
 # Ouvrir le projet : 
-- Créer un nouveau projet unity 
+- Créer un nouveau projet unity. Nous utilisons la version 2022.3.19f1
 - Importer le fichier .unitypackage avec tout son contenu : https://drive.google.com/file/d/1ho9sXFAt5s99VDucdfM0OFK5BUur4Oj4/view?usp=sharing
 - Installer le package AI Navigation
   - Dans la barre des tâches, cliquer sur Window, Package Manager 
@@ -86,4 +86,9 @@ https://www.youtube.com/watch?v=AoD_F1fSFFg <br/>
 https://www.youtube.com/watch?v=QPJHY6MPag4 </br>
 https://www.youtube.com/watch?v=l_3vUnlNoPo </br>
 - Vidéo pour le texte du début: </br>
-https://www.youtube.com/watch?v=MXGEQU3pHlI
+https://www.youtube.com/watch?v=MXGEQU3pHlI </br>
+- Musique de bruit de vagues: </br>
+https://www.youtube.com/watch?v=289XwSA5Kbw&t=140s</br>
+</br>
+### Utilisation de nos assets :</br>
+Dans la planète 3 nous avons utilisé beaucoup d'assets mais nous avons rendu la planète unique car elle n'avait pas tout le décor qu'elle a aujourd'hui. Nous avons ajouté 1 à 1 les différents arbres que vous pouvez voir. Nous avons rajouter les 2 différentes maisons, le musée, la mairie, la tente et le phare pour rendre l'île plus habitable. Nous avons choisi nos personnages avec qui nous interagissons. Ils venaient sans aucuns mouvements et nous avons par la suite rajouté l'animation que nous voyons quand le personnage se déplace, ainsi que quand il s'arrête quand nous sommes proche d'eux. Nous avons, à l'aide de vidéos, ajouté le mouvements des npc, nous avons codé l'innventaire, ainsi que le dialogue et l'implication que cela peut avoir sur notre inventaire.
