@@ -3,6 +3,19 @@ Dans ce readMe vous retrouverez les différents liens correspondant aux sources 
 ## Imports communs : 
 - Modèle de la princesse : https://sketchfab.com/3d-models/cartoon-race-track-oval-f88b33a3a65c4965b03578dc7f4f6eb4
 - Fond d'écran de chargement : https://www.reddit.com/r/Unity2D/comments/s1deiv/main_menu_background_weve_been_working_on_what_do/
+
+# Planète 1 :
+## Liens musicaux :
+Ces liens correspondent aux différentes musiques utilisées dans la planète 1 :
+- https://downloads.khinsider.com/game-soundtracks/album/super-mario-64-soundtrack/05%2520Super%2520Mario%252064%2520Main%2520Theme.mp3
+- https://downloads.khinsider.com/game-soundtracks/album/super-mario-64-soundtrack/07%2520Inside%2520The%2520Castle%2520Walls.mp3
+
+## Liens sketchfab :
+
+- Modele de l'exterieur du Chateau : https://sketchfab.com/3d-models/peach-castle-a21cffbe8b8c4ae9b1614f26f2da8fed
+- Modele de l'interieur du Chateau : https://sketchfab.com/3d-models/super-mario-64-ds-peach-castle-1f-883500a01e474034b73da24bc9f9d47f
+- Teleporteur : https://assetstore.unity.com/packages/vfx/particles/teleporter-25645
+
 # Planète 2 :
 ## Liens musicaux :
 Ces liens correspondent aux différentes musiques utilisées pour la radio lors de la course :
